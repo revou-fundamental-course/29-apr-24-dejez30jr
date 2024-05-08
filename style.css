@@ -5,16 +5,19 @@ html,body{
     box-sizing: border-box;
 }
 
+h2{
+     font-family: "Permanent Marker", cursive;
+}
+
 body{
     background-color: rgb(235, 237, 240);
 }
-
 nav{
     justify-content: space-between;
     display: flex;
-    padding: 1rem 2rem;
     width: 100%;
     position: fixed;
+    padding: 1rem 2rem;
     color: aliceblue;
     background-color: rgb(88, 105, 212);
 }
@@ -44,34 +47,10 @@ ul li a:hover{
    
 }
 
-@media (max-width:768px){
-    nav{
-        flex-wrap: wrap;
-        position: fixed;
-        width: 100%;
-    }
-
-    nav ul{
-       flex-direction: column;
-       width: 100%;
-    }
-    
-    nav ul.hidden{
-        display: none;
-    }
-
-    .menu-icon{
-      
-        align-items: center;
-        display: flex;
-    }
-}
-
-
 .judul{
     text-align: center;
-    margin-bottom: 15PX;
     margin-top: 10%;
+    margin-bottom: 15PX;
 }
 .judul-end{
     text-align: center;
@@ -92,44 +71,20 @@ ul li a:hover{
 
 .card-items{
     margin-top: 8%;
-    flex-direction: column;
     width: 60%;
-    /* border: 2px solid black; */
+/*     border: 2px solid black; */
     border-radius: 15px;
     text-align: center;
     box-sizing: border-box;
-    /* background-color: antiquewhite; */
-}
-
-.trevel{
-    margin-bottom: 0;
-    font-family: "Permanent Marker", cursive;
-    font-size: 20px;
-    color: rgb(2, 2, 2);
-    border-radius: 10px 10px 0px 0px;
+/*     background-color: antiquewhite; */
 }
 
 .img-a{
  border-radius: 10px 10px 10px 10px;
   width: 100%;
-  box-shadow: 4px 4px black;
 }
 
 .week{
-}
-
-.pp{
-    width: 40px;
-    border-radius: 50%;
-    border: 2px solid rgb(255, 255, 255);
-    margin-left: 10px;
-}
-
-.chenel{
-    margin-top: 15px;
-   display: flex;
-   align-items: center;
-   gap: 1rem;
    
 }
 
@@ -142,12 +97,12 @@ h3{
 }
 
 .login{
-    margin-top: 8%;
     width: 300px;
+    margin-top: 8%;
     background-color: aquamarine;
     border: 1px solid black;
     gap: 1rem;
-    margin-left: 8px;
+    margin-left: 10px;
     border-radius: 12px;
     box-shadow: 3px 3px black;
     font-family: "Roboto Mono", monospace;
@@ -166,20 +121,11 @@ input{
     width: 200px;
 }
 
-
-
-.submit{
-}
-
 /* kemamanan */
 
 .box{
     margin-top: 30px;
     display: flex;
-    /* overflow-x: auto;
-    justify-content: center;
-    margin-left: 10px;
-    margin-right: 10px; */
 }
 
 .praturan{
@@ -213,8 +159,7 @@ b{
     border-radius: 30px 0px 30px 0px;
     color: rgb(37, 39, 40);
     text-align: center;
-    padding: 15px;
-    /* min-width: 200px; */
+    padding: 10px;
 }
 
 .tips{
@@ -259,7 +204,7 @@ b{
 .cards{
     text-align: center;
     background-color: darkcyan;
-    margin: 10px;
+    margin: 5px;
     padding: 10px;
     color: aliceblue;
     box-shadow: 5px 5px black;
@@ -268,8 +213,12 @@ b{
 }
 
 .cards:hover{
-    /* transform: scale(1,2); */
+    border: 3px solid black;
     background-color: tomato;
+}
+
+.location{
+    color: red;
 }
 
 .kota{
@@ -278,10 +227,6 @@ b{
    font-family: "Silkscreen", sans-serif;
   font-weight: 700;
   font-style: normal;
-}
-
-i{
-    color: red;
 }
 
 .bali{
@@ -293,7 +238,6 @@ i{
 .arahan{
     text-align: center;
     margin-top: 15px;
-    box-sizing: border-box;
 }
 
 .arahan1{
@@ -302,12 +246,7 @@ i{
 }
 
 .arahan2{
-    /* font-family: "Roboto Mono", monospace; */
     box-sizing: border-box;
-}
-
-.location{
-    color: red;
 }
 
 .tombol{
@@ -339,10 +278,28 @@ a{
     border-radius: 50%;
 }
 
-h4{
-    margin-top: 20px;
-    text-align: center;
-    font-size: 27px;
+
+/*respinsve*/
+@media (max-width: 590px){
+    .judul{
+        margin-top: 20%;
+    }
+    .card-items{
+        width: 90%;
+        border: none;
+    }
+    .barisan{
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+    }
+    .box{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .cards{
+        width: 90%;
+    }
 }
 
 .wrapper{
@@ -352,7 +309,7 @@ h4{
     overflow-x: auto;
     margin-left: 20px;
     margin-right: 20px;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 20px;
 }
 
 .item{
@@ -362,24 +319,16 @@ h4{
     width: 100%;
     margin: 5px;
     border: 1px solid black;
-   
 }
 
 .item:hover{
     background-color: aliceblue;
-    border-radius: 20px;
-    border: 2px solid orange;
+    border-radius: 15px;
+    border: 3px solid orange;
 }
-
-
-/*respinsve*/
-
-@media (max-width: 600px){
+@media (max-width:768px){
     .img-a{
         width: 100%;
-    }
-    .trevel{
-        position: relative;
     }
     .item{
         width: 90%;
@@ -391,24 +340,24 @@ h4{
     .wrapper::-webkit-scrollbar{
         width: 0;
     }
-    .judul{
-        margin-top: 20%;
-    }
-    .card-items{
-        width: 90%;
-        border: none;
-    }
-    .barisan{
-        justify-content: center;
-        display: flex;
-         width: 90%;
-    }
-    .box{
-        justify-content: center;
+    nav{
         flex-wrap: wrap;
+        position: fixed;
+        width: 100%;
     }
 
-    .cards{
-        width: 90%;
+    nav ul{
+       flex-direction: column;
+       width: 100%;
+    }
+    
+    nav ul.hidden{
+        display: none;
+    }
+
+    .menu-icon{
+      
+        align-items: center;
+        display: flex;
     }
 }
