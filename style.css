@@ -259,12 +259,14 @@ b{
 }
 
 button{
-    padding: 7px 17px;
+    padding: 7px 20px;
+    border-radius: 15px;
     width: 150px;
     color: aliceblue;
     background-color: rgb(94, 94, 229);
     margin-bottom: 10px;
     border: 3px solid white;
+    
 }
 
 a{
