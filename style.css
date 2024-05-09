@@ -121,6 +121,11 @@ input{
     width: 200px;
 }
 
+.btn{
+     background-color: rgb(25, 24, 24);
+    color: aliceblue;
+}
+
 /* kemamanan */
 
 .box{
