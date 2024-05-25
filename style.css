@@ -293,7 +293,7 @@ a{
 
 /*respinsve*/
 @media (max-width: 590px){
-    .judul{
+/*     .judul{
         margin-top: 20%;
     }
     .card-items{
@@ -337,9 +337,12 @@ a{
     background-color: aliceblue;
     border-radius: 15px;
     border: 3px solid orange;
-}
+} */
 @media (max-width:768px){
-    .img-a{
+    body{
+        display: none;
+    }
+/*     .img-a{
         width: 100%;
     }
     .item{
@@ -372,4 +375,4 @@ a{
         align-items: center;
         display: flex;
     }
-}
+} */
