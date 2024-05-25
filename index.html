@@ -25,10 +25,10 @@
             <a href="#">ʜᴏᴍᴇ</a>
         </li>
         <li>
-            <a href="#ᴏᴜʀ ᴘᴀᴄᴋᴀɢᴇ">ᴏᴜʀ ᴘᴀᴄᴋᴀɢᴇ</a>
+            <a href="#">ᴏᴜʀ ᴘᴀᴄᴋᴀɢᴇ</a>
         </li>
         <li>
-            <a href="#ʀᴇɢᴜʟᴀᴛɪᴏɴ">ʀᴇɢᴜʟᴀᴛɪᴏɴ</a>
+            <a href="#">ᴄᴀʟʟ ᴜꜱ</a>
         </li>
     </ul>
     </nav>
@@ -50,32 +50,35 @@
                 <p class="profil">Derris.h</p>
             </div> -->
         </div>
-        <div class="login" data-aos="fade-left" data-aos-duration="1000">
-            <form>
+        <div class="login" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <form action=""  method="post" id="submit">
                 <h3>login</h3>
                 <p class="verfikasi">verfikasi akun treveling anda!</p>
                 <label>nama</label>
                 <br>
-                <input type="text">
+                <input type="text" class="input" id="input_text">
                 <br>
                 <label>password</label>
                 <br>
-                <input type="password">
+                <input type="password" class="input" id="input_password">
                 <br>
                 <label>tanggal</label>
                 <br>
                 <input type="date">
+                <div class="input_wrap">
+                    <span class="error_msg">user nama atau password harus diisi</span>
                 <div class="submit">
-                    <input type="submit" class="btn">
+                    <input type="submit" class="btn"  id="log_btn">
+                </div>
                 </div>
             </form>
         </div>
     </div>
     <!-- keamanan -->
     <div class="praturan">
-        <b>For all account users not to just press links from unknown people</b>
+        <b>bagi seluru pengguna akun agar tidak sembarang asal mencet link dari orang tidek di kenal</b>
     </div>
-    <div class="box" id="ʀᴇɢᴜʟᴀᴛɪᴏɴ">
+    <div class="box" data-aos="fade-up" data-aos-duration="2000">
         <div class="barisan">
             <img src="keamanan.png" class="keamanan" />
             <div class="tips">
@@ -107,7 +110,7 @@
             <div class="barisan">
                 <img src="keamanan.png" class="keamanan" />
                 <div class="tips">
-                    <p class="tips1">tips 5</p>
+                    <p class="tips1">tips 4</p>
                     <p>tips 1 jangan asal pencet link yang bukan kami shere</p>
                 </div>
             </div>
@@ -131,7 +134,7 @@
            <img src="sri_lanka_sigiriya_lion_rock-1020x600.jpg" class="item" href="#"/>
            <img src="sri_lanka_sigiriya_lion_rock-1020x600.jpg" class="item" href="#"/>
         </div>
-        <div class="container" id="ᴏᴜʀ ᴘᴀᴄᴋᴀɢᴇ">
+        <div class="container">
             <div class="cards"  data-aos="fade-down-right" data-aos-duration="2000">
                 <i class="fa-solid fa-location-dot fa-xl"></i>
             <div class="kota">
@@ -175,11 +178,11 @@
             </div>
             </div>
         </div>
-        <!-- slider -->
-        
         <!-- arahan -->
         <div class="arahan">
+            <div class="kotak">
             <p class="arahan1">Pilih lokosi yang anda ingin kunjungi</p>
+            </div>
             <footer>
                 <p class="suport">suport by:</p>
                 <img src="revoU.png" class="revo"/>
@@ -192,13 +195,10 @@
                 </button>
             </div>
         </div>
-    <div class="vid">
-       
-    </div>
         <script src="main.js"></script>
-    <script src="main.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
           AOS.init();
+        </script>
 </body>
 </html>
