@@ -387,6 +387,16 @@ h4{
     border: 2px solid orange;
 }
 
+/* perbaikan */
+      .body-UI{
+     display: none;
+   }
+
+   .end-mobile{
+   display: none;
+   }
+
+/* perbaikan */
 
 /*respinsve*/
 
